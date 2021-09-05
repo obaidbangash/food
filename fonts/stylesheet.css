@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Stephanie Script';
+    src: url('../fonts/StephanieScript.woff2') format('woff2'), url('../fonts/StephanieScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
