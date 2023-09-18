@@ -1,5 +1,4 @@
-$(document).ready(function() {
-    console.log("hello")
+$(document).ready(function () {
     $('.single-item').slick();
     $('.saying-content .slider-stars ').slick({
         // settingname: setting - value
@@ -13,39 +12,43 @@ $(document).ready(function() {
     //         $('#pizza-content').toggleClass('d-none')
     //     }
     // })
-    hide_all();
-    show_content('#chicken-content');
+    // hide_all();
+    // show_content('#chicken-content');
 
-    $('#all').click(function(e) {
+    $('#all').click(function (e) {
         e.preventDefault();
         show_all();
     });
 
-    $('#pizza').click(function(e) {
+    $('#pizza').click(function (e) {
         e.preventDefault();
+        hide_all();
+        show_content('#bread-content');
+        addClass()
     });
 
 
-    $('#chicken').click(function(e) {
+    $('#chicken').click(function (e) {
         e.preventDefault();
         hide_all();
         show_content('#chicken-content');
+        $('.menu-img-2').addClass("default")
     });
 
-    $('#fish').click(function(e) {
+    $('#fish').click(function (e) {
         e.preventDefault();
         hide_all();
         show_content('#bread-content');
     });
 
-    $('#sandwich').click(function(e) {
+    $('#sandwich').click(function (e) {
         e.preventDefault();
         hide_all();
         show_content('#sandwich-content');
     });
 
 
-    $('#meat').click(function(e) {
+    $('#meat').click(function (e) {
         e.preventDefault();
         hide_all();
         show_content('#meat-content');
@@ -79,6 +82,10 @@ $(document).ready(function() {
     function show_content(id) {
         $(id).show();
 
+    }
+
+    function addClass() {
+        $('.menu-img').addClass('hide')
     }
 
 });

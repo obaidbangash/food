@@ -302,6 +302,10 @@ header .navbar-light .navbar-toggler:focus {
     width: 100%;
 }
 
+.section-menu .menu-img.hide::before {
+    display: none;
+}
+
 .section-menu .menu-img {
     border-radius: 50%;
     z-index: 3;
@@ -319,6 +323,10 @@ header .navbar-light .navbar-toggler:focus {
     position: relative;
     margin-top: -301px;
     z-index: 2;
+}
+
+.section-menu .menu-img-2.default {
+    margin-top: 0;
 }
 
 .section-menu .menu-1 {
@@ -584,9 +592,23 @@ header .navbar-light .navbar-toggler:focus {
 /* section section-saying ends here */
 
 .map {
-    background-image: url(../images/f.png);
     background-size: cover;
     padding: 132px 0 112px;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.map .container {
+    position: relative;
+    z-index: 11;
 }
 
 .map .foody-location {
@@ -731,10 +753,12 @@ footer .footer-bottom p span {
         max-width: 100% !important;
         padding: 0 40px !important;
     }
+
     .slider-stars {
         width: 90%;
         margin: 0 auto;
     }
+
     .map .foody-location {
         max-width: 50%;
         margin-left: auto;
@@ -748,16 +772,20 @@ footer .footer-bottom p span {
         line-height: 41px;
         font-weight: 400;
     }
+
     .section-menu .menu-btn {
         flex-wrap: wrap;
         justify-content: space-between !important;
     }
+
     .section-menu .menu-btn .button1 {
         margin-bottom: 20px
     }
+
     .p-property {
         font-size: 25px;
     }
+
     .map .foody-location h3 {
         font-size: 26px;
     }
@@ -767,38 +795,48 @@ footer .footer-bottom p span {
     header .header-nav li {
         margin-right: 30px;
     }
+
     .banner .banner-info h2 {
         font-size: 45px;
     }
+
     .stroy-content .story-info p {
         font-size: 18px;
         line-height: 28px;
     }
+
     .section-menu .menu-1 p {
         font-size: 25px;
         line-height: 34px;
     }
+
     .h4-property {
         font-size: 40px;
     }
+
     .section-menu .menu-img-2::after {
         right: 0;
     }
+
     .map .foody-location h2 {
         font-size: 60px;
         line-height: 1;
     }
+
     .map .foody-location h3 a {
         max-width: 36px;
     }
+
     .map .foody-location h3 {
         padding-bottom: 20px;
     }
+
     .section-booking h2 {
         font-size: 65px;
         line-height: 80px;
         padding-bottom: 50px;
     }
+
     .section-booking h3 {
         font-size: 75px;
         line-height: 80px;
@@ -811,9 +849,11 @@ footer .footer-bottom p span {
         font-size: 36px;
         margin-bottom: 10px;
     }
+
     .section-menu h2 {
         font-size: 40px;
     }
+
     .map .foody-location {
         max-width: 72%;
     }
@@ -823,26 +863,32 @@ footer .footer-bottom p span {
     .banner-content {
         flex-wrap: wrap;
     }
+
     header .header-navigation {
         background-color: #000000;
         padding: 40px 0;
         z-index: 999;
         position: relative;
     }
+
     header .header-nav li {
         margin-right: 0;
         padding: 10px 20px;
     }
+
     header .header-nav li:hover {
         background-color: #8A7004;
     }
+
     header .header-nav li a {
         padding: 0;
     }
+
     .navbar-light .navbar-toggler-icon {
         background-image: none !important;
         position: relative;
     }
+
     .navbar-light .navbar-toggler-icon::after {
         content: '\f0c9';
         position: absolute;
@@ -853,101 +899,129 @@ footer .footer-bottom p span {
         font-size: 25px;
         color: #fff;
     }
+
     .banner .banner-info {
         max-width: 100%;
         margin-bottom: 20px;
     }
+
     .banner::after {
         top: 0;
         right: 0;
     }
+
     .banner {
         padding: 264px 0 83px;
     }
+
     .stroy-content {
         flex-wrap: wrap;
     }
+
     .stroy-content .story-img {
         max-width: 100%;
     }
+
     .stroy-content .story-info {
         max-width: 100%;
         order: -1;
     }
+
     .section-menu .menu-1 {
         flex-wrap: wrap;
     }
+
     .section-menu .menu-img {
         max-width: 100%;
         order: 1;
     }
+
     .section-menu .menu-img-2 {
         max-width: 100%;
         margin-top: 0px;
     }
+
     .section-menu .menu-info {
         max-width: 100%;
     }
+
     .section-menu .menu-dishes {
         margin-top: 60px;
     }
+
     .section-menu .menu-1 {
         margin-bottom: 60px;
     }
+
     .section-menu .menu-1 h4 {
         margin-bottom: 20px;
     }
+
     .h4-property {
         font-size: 28px;
         line-height: 31px;
     }
+
     .section-menu {
         padding: 50px 0px;
     }
+
     footer .footer-list {
         text-align: left;
         margin-bottom: 50px
     }
+
     footer .footer-list .footer-nav {
         margin-right: auto !important;
         margin-left: 0 !important;
     }
+
     footer .footer-list h2 {
         margin-bottom: 30px;
     }
+
     footer .footer-list ul {
         margin: 0 auto 0 0;
     }
+
     .section-menu .menuimg1::after {
         left: 0;
     }
+
     .section-menu .menuimg3::after {
         left: 0;
     }
+
     .saying-content .slider-img {
         max-width: 160px;
         height: 160px;
         top: -82px;
     }
+
     .saying-content .slider {
         border: 2px dashed #8A7004;
         padding: 113px 30px 50px;
         margin-bottom: 90px;
     }
+
     .saying-content .saying-slider {
         margin-top: 100px;
         position: relative;
     }
+
     .saying-content h2 {
         font-size: 37px;
     }
+
     .p-property {
         font-size: 18px;
         line-height: 28px;
     }
+
     .section-saying {
         padding: 88px 0px;
     }
+
     .banner .banner-info {
         z-index: 11;
     }
@@ -958,6 +1032,7 @@ footer .footer-bottom p span {
         max-width: 90%;
         margin: 0 auto;
     }
+
     .section-menu .menu-1 {
         /* display: none; */
     }
@@ -967,45 +1042,59 @@ footer .footer-bottom p span {
     .map .foody-location h2 {
         margin-bottom: 24px;
     }
+
     .section-booking {
         padding: 100px 0;
     }
+
     .section-booking h3 {
         font-size: 50px;
         line-height: 59px;
     }
+
     .section-booking h4 {
         font-size: 57px;
         line-height: 62px;
     }
+
     .saying-content .slick-next {
         right: -30px !important;
     }
+
     .saying-content .slick-prev {
         left: -40px !important
     }
+
     .p-property {
         font-size: 16px;
         line-height: 24px;
     }
+
     .saying-content .slider p {
         padding-top: 23px;
     }
+
     .map .foody-location h2 {
         font-size: 30px;
     }
+
     .map .foody-location h3 {
         font-size: 16px;
+        padding: 0;
     }
+
     .section-menu .menu-btn .button1 {
         min-width: 175px;
     }
+
     .section-menu .menu-btn .button1 a {
         font-size: 18px;
     }
+
     .banner .banner-info p {
         font-size: 21px;
     }
+
     .banner .banner-info h2 {
         font-size: 39px;
         padding-bottom: 50px;
@@ -1016,73 +1105,93 @@ footer .footer-bottom p span {
     .container {
         padding: 0 20px !important;
     }
+
     .banner {
         padding: 165px 0 50px;
     }
+
     .stroy-content .story-info {
         padding: 40px 20px;
     }
+
     .stroy-content .story-info h2 {
         font-size: 44px;
         line-height: 49px;
         padding-bottom: 25px;
     }
+
     .section-menu .menu-btn {
         justify-content: center !important;
     }
+
     .section-menu .menu-img img {
         width: 220px;
     }
+
     .section-menu .menu-1 p {
         font-size: 18px;
         line-height: 27px;
     }
+
     .section-menu .menuimg4::after {
         left: 0;
     }
+
     .section-menu .menuimg4::before {
         display: none;
     }
+
     .section-menu .menuimg3::before {
         display: none;
     }
+
     .section-menu .menu-img-2::before {
         display: none;
     }
+
     .section-booking h3 {
         font-size: 31px;
         line-height: 59px;
     }
+
     .saying-content h2 {
         font-size: 26px;
     }
+
     .saying-content .slider-img {
         max-width: 114px;
         height: 114px;
         top: -62px;
     }
+
     .saying-content .slider {
         padding: 80px 15px 50px;
         margin-bottom: 50px;
     }
+
     .slick-prev,
     .slick-next {
         top: 95% !important
     }
+
     .saying-content .slick-next {
         right: 80px !important;
     }
+
     .saying-content .slick-prev {
         left: 80px !important;
     }
+
     .map .foody-location {
         max-width: 100%;
         padding: 38px 13px;
         margin: 0 auto;
     }
+
     footer .social-links a {
         margin-right: 19px;
     }
+
     .banner .banner-info h2 {
         font-size: 29px;
         padding-bottom: 50px;
